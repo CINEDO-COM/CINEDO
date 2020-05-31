@@ -1,0 +1,69 @@
+/* ---------------------------------------------
+[Master Stylesheet]
+
+  [Color Codes]
+
+  $heading: #333333; [Heading Color]
+  $text: #707070; [Text Color]
+  $bg-gray: #f4f4f4; [Gray Background]
+  $primary: #00aeef; [Primary Color]
+  $white: #ffffff; [White Color]
+  $dark: #000; [Dark Color]
+  $border: #7450fe; [Border Color]
+  $hover: #00aeef; [Hover Color]
+  $footer: #191c1d; [Footer Color]
+  $secondary: #222222; [Secondary Color]
+
+  ---------------------------------------------
+  [Font Family]
+
+  'Montserrat', sans-serif;
+--------------------------------------------- */
+
+/* Import Fonts & All CSS */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import 'css/bootstrap.min.css';
+@import 'css/animate.css';
+@import 'css/default-assets/classy-nav.css';
+@import 'css/owl.carousel.min.css';
+@import 'css/magnific-popup.css';
+@import 'css/font-awesome.min.css';
+@import 'css/style.css';
+
+// **************
+// Utilities
+// **************
+@import "utilities/fonts";
+@import "utilities/variables";
+@import "utilities/responsive";
+@import "utilities/color";
+
+// *************
+// Mixins
+// *************
+@import "mixins/flex";
+@import "mixins/miscellaneous";
+
+// **************
+// Stylesheet
+// *************
+@import "reboot";
+@import "spacing";
+@import "preloader";
+@import "heading";
+@import "backtotop";
+@import "buttons";
+@import "header";
+@import "hero";
+@import "testimonial";
+@import "masterclass";
+@import "appointment";
+@import "pricing";
+@import "service";
+@import "about";
+@import "barfiller";
+@import "breadcrumb";
+@import "blog";
+@import "widget";
+@import "footer";
+@import "contact";
