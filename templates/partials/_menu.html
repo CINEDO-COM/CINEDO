@@ -1,0 +1,54 @@
+{% load static %}
+
+<!-- Main Header Start -->
+<div class="main-header-area">
+  <div class="classy-nav-container breakpoint-off">
+    <div class="container">
+      <!-- Classy Menu -->
+      <nav class="classy-navbar justify-content-between" id="cinedoNav">
+
+        <!-- Logo -->
+        <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/cinedo.png' %}" alt=""></a>
+
+        <!-- Navbar Toggler -->
+        <div class="classy-navbar-toggler">
+          <span class="navbarToggler"><span></span><span></span><span></span></span>
+        </div>
+
+        <!-- Menu -->
+        <div class="classy-menu">
+
+          <!-- Close Button -->
+          <div class="classycloseIcon">
+            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+          </div>
+
+          <!-- Nav Start -->
+          <div class="classynav">
+            <ul id="nav">
+              <li><a href="{% url 'home' %}">Home</a></li>
+              <li><a href="{% url 'moviesforyou' %}">Movies for You</a></li>
+              <li><a href="{% url 'masterclasses' %}">MasterClasses</a></li>
+              <li><a href="{% url 'supcreators' %}">Support Creators</a></li>
+
+
+            </ul>
+          </div>
+          <!-- Nav End -->
+        </div>
+
+        <!-- Booking Now Button waittttt-->
+        {% if user.is_authenticated%}
+          <li>Hi <a href="{% url 'dashboard' %}"><u>{{user.username}}</u></a>!</li>
+            <li><a href="javascript:{document.getElementById('logout').submit()}"><i class="fa fa-sign-out"></i>Logout</a></li>
+        {% else %}
+        <a href="{% url 'register' %}" class="btn cinedo-btn booking-btn">Register</a>
+        <a href="{% url 'login' %}" class="btn cinedo-btn booking-btn">Login</a>
+        {% endif %}
+        <a href="{% url 'eshop' %}" class="btn cinedo-btn booking-btn">E-Shop</a>
+      </nav>
+    </div>
+  </div>
+</div>
+</header>
+<!-- ***** Header Area End ***** -->

@@ -1,0 +1,263 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<!-- ***** Breadcrumb Area Start ***** -->
+<div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/david.jpg'%});">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12">
+        <h2 class="title">MasterClasses and Tips</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="breadcumb--con">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Film Production</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ***** Breadcrumb Area End ***** -->
+
+<!-- ***** Cinedo MasterClass Area Start ***** -->
+<section class="masterclass-area section-padding-100-0">
+  <div class="container">
+    <div class="row">
+      <!-- Section Heading -->
+      <div class="col-12">
+        <div class="section-heading text-center">
+          <h2>Our MasterClasses</h2>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      {% if masterclasses %}
+
+        {% for masterclass in masterclasses %}
+      <!-- Single MasterClass Area -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="single-masterclass-area mb-100">
+          <img src="{{masterclass.imagethumb.url}}" alt="">
+          <!-- MasterClass Content -->
+          <div class="masterclass-content">
+
+            <!-- MasterClass Info -->
+            <div class="masterclass-info bg-gradient-overlay">
+              <a href="{% url 'masterclass' masterclass.id %}"> <h5>{{masterclass.title}}</h5>
+              <p>Click Here</p> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      {% else %}
+        <p> There are no masterclasses available yet. Check back later</p>
+      {% endif %}
+
+
+<!-- ***** Cinedo MasterClass Tips Area Start ***** -->
+<section class="masterclass-area section-padding-100-0">
+  <div class="container">
+    <div class="row">
+      <!-- Section Heading -->
+      <div class="col-12">
+        <div class="section-heading text-center">
+          <h2>Our Tips on Masterclasses</h2>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Single Masterclass Area -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="single-masterclass-area mb-100">
+          <img src="{% static 'website/img/bg-img/12th.png' %}" alt="">
+          <!-- masterclass Content -->
+          <div class="masterclass-content">
+
+            <!-- MasterClass Info -->
+            <div class="masterclass-info bg-gradient-overlay">
+              <a href="{% url 'tips' %}"><h5>The Cinedo Community Tips</h5>
+              <p>Click Here</p> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="single-masterclass-area mb-100">
+          <img src="{% static 'website/img/bg-img/12th.png' %}" alt="">
+          <!-- masterclass Content -->
+          <div class="masterclass-content">
+
+            <!-- MasterClass Info -->
+            <div class="masterclass-info bg-gradient-overlay">
+              <a href="{% url 'tips' %}"><h5>Add your Tips</h5>
+              <p>Click Here</p> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ***** Cinedo Masterclass Tips Area End ***** -->
+
+<!-- Login Area Start -->
+<section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/14th.jpg' %}');">
+  <div class="container">
+    <div class="row">
+      <!-- Section Heading -->
+      <div class="col-12">
+        <div class="section-heading text-center white">
+          <h2>Sign Up to Cinedo</h2>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+
+        <div class="appointment-form">
+          <form action="#" method="post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group mb-30">
+                  <input type="text" name="your-name" class="form-control" placeholder="Your Name" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group mb-30">
+                  <input type="text" name="your-phone" class="form-control" placeholder="Your Phone" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group mb-30">
+                  <input type="email" name="your-email" class="form-control" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group mb-30">
+                  <input type="text" name="your-address" class="form-control" placeholder="Your Address">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group mb-30">
+                  <select name="your-scheldule" class="form-control">
+                    <option value="Choose Your Scheldule">Choose Your Preference</option>
+                    <option value="9 AM to 10 AM">Film Making</option>
+                    <option value="11 AM to 12 PM">Directing</option>
+                    <option value="2 PM to 4 PM">Production</option>
+                    <option value="8 PM to 10 PM">Cinematic Analysis</option>
+                  </select>
+                </div>
+
+              <div class="col-12">
+                <div class="form-group mb-30">
+                  <textarea name="your-message" class="form-control" placeholder="Your Message"></textarea>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn cinedo-btn">Join Now</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ***** Blog Area Start ***** -->
+<section class="cinedo-blog-area section-padding-100-0 clearfix">
+  <div class="container">
+    <div class="row">
+      <!-- Section Heading -->
+      <div class="col-12">
+        <div class="section-heading text-center">
+          <h2>The Latest News</h2>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Single Blog Item -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-blog-item mb-100">
+          <a href="{% url 'blogdetails' %}">
+           <!-- <img src="{% static 'website/img/bg-img/4.jpg' %}" alt="">-->
+          </a>
+          <!-- Blog Content -->
+          <div class="blog-content">
+            <a href="{% url 'blogdetails' %}" class="post-title">Film Festival 1</a>
+            <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+            <div class="post-meta">
+              <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+              <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Blog Item -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-blog-item mb-100">
+          <a href="{% url 'blogdetails' %}">
+           <!-- <img src="{% static 'website/img/bg-img/5.jpg' %}" alt="">-->
+          </a>
+          <!-- Blog Content -->
+          <div class="blog-content">
+            <a href="{% url 'blogdetails' %}" class="post-title">Film Festival 2</a>
+            <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+            <div class="post-meta">
+              <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+              <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Blog Item -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-blog-item mb-100">
+          <a href="{% url 'blogdetails' %}">
+           <!-- <img src="{% static 'website/img/bg-img/6.jpg' %}" alt="">-->
+          </a>
+          <!-- Blog Content -->
+          <div class="blog-content">
+            <a href="{% url 'blogdetails' %}" class="post-title">Film Festival 3</a>
+            <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+            <div class="post-meta">
+              <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+              <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ***** Blog Area End ***** -->
+
+{% endblock %}

@@ -1,0 +1,286 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/movies.jpg'%});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Movies For You</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Movies</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ***** Services Area Start ***** -->
+  <section class="cinedo-services-area mt-50 mb-50">
+    <div class="container">
+      <div class="row">
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="blog-thumbnail">
+              <img src="{% static 'website/img/core-img/7.png' %}" alt="">
+            </div>
+            <h5>Comedies</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+              <p><a href="{% url 'genre' %}"> See Our List</a>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="blog-thumbnail">
+              <img src="{% static 'website/img/core-img/2.png' %}" alt="">
+            </div>
+            <h5>Experimental</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+              <p><a href="#"> See Our List</a>
+          </div>
+        </div>
+
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="blog-thumbnail">
+              <img src="{% static 'website/img/core-img/8.png' %}" alt="">
+            </div>
+            <h5>Drama</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+              <p><a href="#"> See Our List</a>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="blog-thumbnail">
+              <img src="{% static 'website/img/core-img/3.png' %}" alt="">
+            </div>
+            <h5>Action</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+              <p><a href="#"> See Our List</a>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="blog-thumbnail">
+              <img src="{% static 'website/img/core-img/10.png' %}" alt="">
+            </div>
+            <h5>Documentary</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+              <p><a href="#"> See Our List</a>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="blog-thumbnail">
+              <img src="{% static 'website/img/core-img/4.png' %}" alt="">
+            </div>
+            <h5>Sci-Fi</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+              <p><a href="#"> See Our List</a>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="blog-thumbnail">
+              <img src="{% static 'website/img/core-img/6.png' %}" alt="">
+            </div>
+            <h5>Animation</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+              <p><a href="#"> See Our List</a>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="blog-thumbnail">
+              <img src="{% static 'website/img/core-img/9.png' %}" alt="">
+            </div>
+            <h5>Horror</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+              <p><a href="#"> See Our List</a>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="blog-thumbnail">
+              <img src="{% static 'website/img/core-img/5.png' %}" alt="">
+            </div>
+            <h5>Romance</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+              <p><a href="#"> See Our List</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ***** Services Area End ***** -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/back.jpg' %}');">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Testimonials Slides -->
+          <div class="testimonials-slides owl-carousel">
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/david.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Sometimes I get an idea for cinema. And when you get an idea that you fall in love with, this is a glorious day.”</h5>
+                <h6>David Lynch</h6>
+                <p>Director</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/orson.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“The notion of directing a film is the invention of critics - the whole eloquence of cinema is achieved in the editing room.”</h5>
+                <h6>Orson Welles</h6>
+                <p>Director</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/clint.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“A lot of dumb pictures have made a lot of money, but that doesn't mean they're going to be anything cinema students will revel over in the future.”</h5>
+                <h6>Clint Eastwood</h6>
+                <p>Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Blog Area Start ***** -->
+  <section class="cinedo-blog-area section-padding-100-0 clearfix">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>The Latest News</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="{% url 'blogdetails' %}">
+             <!-- <img src="{% static 'website/img/bg-img/4.jpg' %}" alt="">-->
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="{% url 'blogdetails' %}" class="post-title">Film Festival 1</a>
+              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+                <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="{% url 'blogdetails' %}">
+             <!-- <img src="{% static 'website/img/bg-img/5.jpg' %}" alt="">-->
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="{% url 'blogdetails' %}" class="post-title">Film Festival 2</a>
+              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+                <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="{% url 'blogdetails' %}">
+             <!-- <img src="{% static 'website/img/bg-img/6.jpg' %}" alt="">-->
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="{% url 'blogdetails' %}" class="post-title">Film Festival 3</a>
+              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+                <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Blog Area End ***** -->
+{% endblock %}

@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/2nd.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Page Details</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Page Details</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="cinedo--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            <img src="{% static 'website/img/bg-img/2nd.jpg' %}" alt="">
+
+            <h2 class="post-title">Life Aquatic With Steve Zizou 2020 </h2>
+            <div class="post-meta">
+              <a href="#"><i class="icon_clock_alt"></i> May 2020</a>
+              <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
+            </div>
+            <p>Donec tempor, lorem et euismod elefend, est lectus laoreet ante, sed acusan justo diam nec tincidunt interdum ante consectetur dapibus molestie utsalism eleifend metus lacus nec neque. Donec pellentesque nisl nec ligula tempor congue.
+              Nullam rutrum nunc and dapibus interdum. Nunc accumsan dictum mollis. Morbi ac convallis sem, a venenatis lacus. Phasellus in massa in ligula placerat tempus. Quisque id egestas odio, eget accumsan odio. Nunc vel turpis viverra quam
+              imperdiet pellentesque. Nunc vitae sapien eu lorem convallis cursus nec lectus. Praesent cursus ornare lacus ac aliquet.</p>
+            <p>Vestibulum vel ante a quam consectetur volutpat eu a felis. Nullam non dui quis massa condimentum porttitor non ut nisi. Maecenas congue scelerisque purus, eget molestie ligulan volutpatut. Integer artor miss, cursussed efficitur non,
+              consequat a diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Integer vel ullamcorper neque. Quisque convallis ante purus, eget congutor ultrices. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean anunc massa venenatis ullamcorper. Mauris ipsum tellus, faucibus massa non, dapibus suscipit orci.</p>
+
+              <div class="icon--">
+              <img src="{% static 'website/img/core-img/cinema5.png' %}" alt="">
+              </div>
+
+              <a href="https://www.imdb.com/title/tt0362270/"> Visit Page on Imdb</a>
+              <p> </p>
+              <p> </p>
+
+              <div class="icon--">
+              <img src="{% static 'website/img/core-img/cinema3.png' %}" alt="">
+              </div>
+
+              <a href="#"> Add to Watchlist</a>
+              <p> </p>
+              <p> </p>
+
+          </div>
+          <div>
+          <div class="col-12 col-lg-6">
+          <div class="cinedo-video-area mb-100">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UpU0DZXTGA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+
+
+
+
+          </div>
+
+
+          <!-- Post Share  -->
+          <div class="post-share-area mb-30">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i> Share</a>
+            <a href="#" class="tweet"><i class="fa fa-twitter"></i> Tweet</a>
+            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i> Share</a>
+            <a href="#" class="pinterest"><i class="fa fa-pinterest"></i> Share</a>
+          </div>
+
+          <!-- Comments Area -->
+          <div class="comment_area clearfix">
+            <h5 class="title">3 Comments</h5>
+
+            <ol>
+              <!-- Single Comment Area -->
+              <li class="single_comment_area">
+                <!-- Comment Content -->
+                <div class="comment-content d-flex">
+                  <!-- Comment Author -->
+                  <div class="comment-author">
+                    <img src="{% static 'website/img/bg-img/25th.jpg' %}" alt="author">
+                  </div>
+                  <!-- Comment Meta -->
+                  <div class="comment-meta">
+                    <a href="#" class="post-author">Tom Hardy / <span>22nd August 2020 at 10:00 am</span></a>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sitdown ameto, consectetur, adipisci velit, sed quiata non numqua eius modi tempor incidunt ut labore.</p>
+                    <a href="#" class="comment-reply">Reply</a>
+                  </div>
+                </div>
+                <ol class="children">
+                  <li class="single_comment_area">
+                    <!-- Comment Content -->
+                    <div class="comment-content d-flex">
+                      <!-- Comment Author -->
+                      <div class="comment-author">
+                        <img src="{% static 'website/img/bg-img/26th.jpg' %}" alt="author">
+                      </div>
+                      <!-- Comment Meta -->
+                      <div class="comment-meta">
+                        <a href="#" class="post-author">Samantha Harvey / <span>14 April 2020 at 10:30 am</span></a>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sitdown ameto, consectetur, adipisci velit, sed quiata non numqua eius modi tempor incidunt ut labore.</p>
+                        <a href="#" class="comment-reply">Reply</a>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </li>
+
+              <!-- Single Comment Area -->
+              <li class="single_comment_area">
+                <!-- Comment Content -->
+                <div class="comment-content d-flex">
+                  <!-- Comment Author -->
+                  <div class="comment-author">
+                    <img src="{% static 'website/img/bg-img/27th.jpg' %}" alt="author">
+                  </div>
+                  <!-- Comment Meta -->
+                  <div class="comment-meta">
+                    <a href="#" class="post-author">Jonny Evans / <span>28 Sep 2020 at 11:00 am</span></a>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sitdown ameto, consectetur, adipisci velit, sed quiata non numqua eius modi tempor incidunt ut labore.</p>
+                    <a href="#" class="comment-reply">Reply</a>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- Leave A Reply -->
+          <div class="contact-form mt-30">
+            <h5 class="mb-30">Ask Us Anything</h5>
+
+            <!-- Form -->
+            <form action="{% url 'blogdetails' %}" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
+                </div>
+                <div class="col-12">
+                  <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn cinedo-btn">Submit</button>
+                </div>
+              </div>
+            </form>
+            <p> </p>
+            <p> </p>
+
+          </div>
+        </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}
